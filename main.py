@@ -24,17 +24,15 @@ class UsernameChecker:
         return [self.format_output(username, self.check(username)) for username in self.usernames_to_check]
 
     def check(self, username: str) -> bool:
-        return self.session.proxy_check(username, self.proxy) if self.use_proxies else self.session.check_user(username)
+        result = self.session.proxy_check(
+            username, self.proxy) if self.use_proxies else self.session.check_user(username)
+        print(f"{self.format_output(username, result)}\n", end='', flush=True)
 
     def format_output(self, username: str, result: bool) -> str:
         status: str = "available" if result else "taken"
         color: str = Fore.GREEN if result else Fore.RED
         return f"[{color}{username}{Style.RESET_ALL}] - {status}"
 
-
 if __name__ == "__main__":
     checker: UsernameChecker = UsernameChecker()
-    results: List[str] = checker.check_usernames()
-
-    for result in results:
-        print(result)
+    checker.check_usernames()
