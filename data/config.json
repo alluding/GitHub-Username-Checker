@@ -1,5 +1,5 @@
 {
-  "use_proxies": true,
+  "use_proxies": false,
   "usernames": "data/usernames.txt",
   "proxy": {
     "http": "",
