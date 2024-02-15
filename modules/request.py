@@ -2,7 +2,6 @@ from typing import Dict
 
 import requests
 
-
 class _Session(requests.Session):
     def __init__(self, use_proxies: bool = False):
         super().__init__()
