@@ -11,21 +11,23 @@
   <p align="center">
     Uses requests and the GitHub API to process and verify the availability of GitHub usernames.
     <br />
-    <br />
-    <a href="https://github.com/alluding/GitHub-Username-Checker/issues">Report a Bug</a>
-    ·
-    <a href="https://github.com/alluding/GitHub-Username-Checker/issues">Request a Feature</a>
-  </p>
 </div>
-  
+
 ---------------------------------------
 
-### Features
-* Swift and efficient
-* Free to use
-* Supports both Proxies and Proxyless modes
-* Automatically cleans usernames (removes leading whitespaces, duplicates, etc.)
+<h3>Features</h3>
+<ul>
+    <li>Swift and efficient</li>
+    <li>Free to use</li>
+    <li>Supports both Proxies and Proxyless modes</li>
+    <li>Automatically cleans usernames (removes leading whitespaces, duplicates, etc.)</li>
+</ul>
 
-### Credits
-* README Inspiration: @doozleuwu (@pyp)
-* Core code: @alluding
+<h3>Credits</h3>
+<ul>
+    <li>README Inspiration: <a href="https://github.com/doozleuwu">@doozleuwu</a> (<a href="https://github.com/pyp">@pyp</a>)</li>
+    <li>Core code: <a href="https://github.com/alluding">@alluding</a></li>
+</ul>
+
+</body>
+</html>
