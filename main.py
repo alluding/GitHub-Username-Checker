@@ -20,15 +20,21 @@ class UsernameChecker:
         self.usernames_to_check: List[str] = open(
             self.config["usernames"]).read().splitlines()
 
-    def check_usernames(self) -> List[str]:
+    def check_usernames(
+        self
+    ) -> List[str]:
         return [self.format_output(username, self.check(username)) for username in self.usernames_to_check]
 
-    def check(self, username: str) -> bool:
+    def check(
+        self, username: str
+    ) -> bool:
         result = self.session.proxy_check(
             username, self.proxy) if self.use_proxies else self.session.check_user(username)
         print(f"{self.format_output(username, result)}\n", end='', flush=True)
 
-    def format_output(self, username: str, result: bool) -> str:
+    def format_output(
+        self, username: str, result: bool
+    ) -> str:
         status: str = "available" if result else "taken"
         color: str = Fore.GREEN if result else Fore.RED
         return f"[{color}{username}{Style.RESET_ALL}] - {status}"
