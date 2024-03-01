@@ -9,7 +9,7 @@
   <h2 align="center">GitHub Username Checker</h3>
 
   <p align="center">
-    Uses requests and the GitHub API to process and verify the availability of GitHub usernames.
+    Uses requests and the GitHub API (utilizes the base URL before the API) to process and verify the availability of GitHub usernames.
     <br />
 </div>
 
