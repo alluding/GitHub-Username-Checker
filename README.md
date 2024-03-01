@@ -15,19 +15,20 @@
 
 ---------------------------------------
 
-<h3>Features</h3>
-<ul>
-    <li>Swift and efficient</li>
-    <li>Free to use</li>
-    <li>Supports both Proxies and Proxyless modes</li>
-    <li>Automatically cleans usernames (removes leading whitespaces, duplicates, etc.)</li>
-</ul>
+### Features
+- Swift and efficient
+- Free to use
+- Supports both Proxies and Proxyless modes
+- Automatically cleans usernames (removes leading whitespaces, duplicates, etc.)
 
-<h3>Credits</h3>
-<ul>
-    <li>README Inspiration: <a href="https://github.com/doozleuwu">@doozleuwu</a> (<a href="https://github.com/pyp">@pyp</a>)</li>
-    <li>Core code: <a href="https://github.com/alluding">@alluding</a></li>
-</ul>
+### Todo
+- [ ] Add configurable threading
+- [ ] Support saving usernames to text file
+- [ ] Discord webhook notifications
+
+### Credits
+- README Inspiration: [@doozleuwu](https://github.com/doozleuwu) ([@pyp](https://github.com/pyp))
+- Core code: [@alluding](https://github.com/alluding)
 
 </body>
 </html>
